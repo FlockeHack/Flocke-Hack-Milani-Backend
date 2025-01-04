@@ -110,5 +110,3 @@ flocke-hack-milani-backend-production.up.railway.app/v1/liquidacoes/{id}
 ```
 flocke-hack-milani-backend-production.up.railway.app/v1/liquidacoes/eventos/{numero-protocolo}
 ```
-
-teste
