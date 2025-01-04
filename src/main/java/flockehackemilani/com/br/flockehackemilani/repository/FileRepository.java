@@ -1,4 +1,10 @@
 package flockehackemilani.com.br.flockehackemilani.repository;
 
-public interface FileRepository {
+import flockehackemilani.com.br.flockehackemilani.entity.FileEntity;
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface FileRepository extends MongoRepository<FileEntity, String> {
+
 }

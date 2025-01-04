@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        .header { background-color: #5CA57A; color: white; text-align: center; padding: 10px; }
+        .body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.5; }
+        .footer {
+            background-color: #f1f1f1;
+            color: #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            margin-top: 20px;
+            gap: 30px;
+            padding: 10px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="header"><h1>Requisição de contato para <span th:text="${name}">Nome</span></h1></div>
+<div class="body">
+    <p>Foi requisitado o contato para:</p>
+    <p>     Nome: <span th:text="${name}">Nome</span></p>
+    <p>     Email: <span th:text="${email}">Email</span></p>
+    <p>     Telefone: <span th:text="${phone}">Telefone</span></p>
+    <p>     Cidade: <span th:text="${city}">Cidade</span></p>
+    <p>     UF: <span th:text="${uf}">UF</span></p>
+
+    <p>Mensagem enviada: <span th:text="${message}">Mensagem</span></p>
+</div>
+<div class="footer">
+    <img src="cid:logo" alt="logo" style="max-width: 85px; height: auto;"/>
+    <p>&copy; 2025 Flocke Hack & Milani. Todos os direitos reservados.</p>
+</div>
+</body>
+</html>
